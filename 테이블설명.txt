@@ -1,0 +1,32 @@
+Recipes 테이블
+
+recipe_id		레시피를 식별하는 고유 번호입니다.
+recipe_name	레시피의 이름입니다. 
+ingredients		레시피에 사용되는 재료 목록입니다.
+calories 		레시피의 칼로리 (kcal)입니다.
+protein		단백질 함량 (g)입니다.
+fat			지방 함량 (g)입니다.
+carbohydrates	탄수화물 함량 (g)입니다.
+sodium		나트륨 함량 (mg)입니다.
+main_image_url	레시피를 대표하는 이미지 주소입니다.
+category		레시피의 종류 (반찬, 국찌개) 입니다.
+method		레시피의 조리 방식 (끓이기, 굽기, 찌기)입니다.
+serving_weight	레시피의 1회 제공량(1인분)의 무게(g) 또는 양 정보입니다.
+hashtag		레시피 검색에 사용될 수 있는 주요 태그입니다.
+recipe_tip		레시피와 관련된 추가적인 팁 또는 설명입니다.
+
+RecipeSteps 테이블
+
+step_id		조리 단계를 식별하는 고유 번호입니다.
+recipe_id		이 단계가 속한 레시피를 가리키는 참조 ID입니다. (Recipes 테이블의 recipe_id와 연결됨)
+step_number	조리 단계의 순서 (1단계, 2단계)입니다.
+instruction		해당 단계의 자세한 조리 설명입니다.
+image_url		해당 조리 단계를 보여주는 이미지 주소입니다.
+
+Users 테이블
+
+user_id		사용자를 식별하는 고유 번호입니다.
+username		사용자의 로그인 이름 또는 별명입니다. 
+bmi_value		사용자의 BMI 수치입니다.
+bmi_category	BMI 수치에 따른 범주 (저체중, 정상, 과체중)입니다.
+password_hash	암호화된 비밀번호
